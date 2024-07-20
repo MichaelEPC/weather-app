@@ -1,10 +1,8 @@
 #Weather App
 A simple and elegant weather application that provides real-time weather updates and forecasts for various locations. Built with React, Redux Toolkit, and TypeScript, this app uses the OpenWeatherMap API to fetch weather data.
 
-`````markdown
 ![weather app UI](./repo/appBackJPG.JPG)
 
-````markdown
 ###Features
 Current Weather: Get the current weather conditions for any city.
 Weather Forecast: View the weather forecast for the next five days.
@@ -74,8 +72,4 @@ Contributors:
 - Freekpik
 - Iconixar
 
-```markdown
-Mady by Michael Posada - contact michaelposadadev@gmail.com
-```
-````
-`````
+Made by Michael Posada - contact michaelposadadev@gmail.com
