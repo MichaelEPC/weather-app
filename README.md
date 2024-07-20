@@ -6,12 +6,11 @@ A simple and elegant weather application that provides real-time weather updates
 
 ### Features
 
-Current Weather: Get the current weather conditions for any city.
-Weather Forecast: View the weather forecast for the next five days.
-Search History: Keep track of your recent searches.
-Responsive Design: Optimized for both desktop and mobile devices.
-Loading Indicators: Visual feedback while fetching data.
-Screenshots
+- Current Weather: Get the current weather conditions for any city.
+- Weather Forecast: View the weather forecast for the next five days.
+- Search History: Keep track of your recent searches.
+- Responsive Design: Optimized for both desktop and mobile devices.
+- Loading Indicators: Visual feedback while fetching data.
 
 ### Installation
 
@@ -50,26 +49,26 @@ The application should now be running on http://localhost:3000.
 
 ### Usage
 
-Enter the name of a city in the search bar.
-View the current weather and the forecast for the next five days.
-Your recent searches will be stored and displayed for quick access.
-Built With
-React
-Redux Toolkit
-TypeScript
-Vite
-OpenWeatherMap API
-Contributing
-Contributions are welcome! Please follow these steps:
+- Enter the name of a city in the search bar.
+- View the current weather and the forecast for the next five days.
+- Your recent searches will be stored and displayed for quick access.
+- Built With
+- React
+- Redux Toolkit
+- TypeScript
+- Vite
+- OpenWeatherMap API
+- Contributing
+- Contributions are welcome! Please follow these steps:
 
 ### Fork the repository.
 
-Create a new branch (git checkout -b feature/your-feature-name).
-Make your changes and commit them (git commit -m 'Add some feature').
-Push to the branch (git push origin feature/your-feature-name).
-Open a Pull Request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Create a new branch (git checkout -b feature/your-feature-name).
+- Make your changes and commit them (git commit -m 'Add some feature').
+- Push to the branch (git push origin feature/your-feature-name).
+- Open a Pull Request.
+- License
+- This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Acknowledgements
 
