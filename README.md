@@ -18,32 +18,34 @@ Prerequisites
 Node.js (version 14 or higher)
 Yarn or npm
 
-### Steps
+### Steps:
 
-Clone the repository:
-git clone https://github.com/yourusername/weather-app.git
-cd weather-app
+### Clone the repository:
+
+- git clone https://github.com/yourusername/weather-app.git
+- cd weather-app
 
 ### Install dependencies:
 
-Using Yarn:
+- Using Yarn:
+
 yarn install
 
-Using npm:
+- Using npm:
+
 npm install
 
 ### Set up environment variables:
 
-Create a .env file in the root of your project and add your OpenWeatherMap API key:
-makefile
-VITE_API_URL=https://api.openweathermap.org/data/2.5/
-VITE_API_KEY=your_api_key_here
+- Create a .env file in the root of your project and add your OpenWeatherMap API key:
+- VITE_API_URL=https://api.openweathermap.org/data/2.5/
+- VITE_API_KEY=your_api_key_here
 
-Using Yarn:
-yarn dev
+- Using Yarn:
+  yarn dev
 
-Using npm:
-npm run dev
+- Using npm:
+  npm run dev
 
 The application should now be running on http://localhost:3000.
 
@@ -52,14 +54,18 @@ The application should now be running on http://localhost:3000.
 - Enter the name of a city in the search bar.
 - View the current weather and the forecast for the next five days.
 - Your recent searches will be stored and displayed for quick access.
-- Built With
+
+### Built With
+
 - React
 - Redux Toolkit
 - TypeScript
 - Vite
 - OpenWeatherMap API
-- Contributing
-- Contributions are welcome! Please follow these steps:
+
+### Contributing
+
+Contributions are welcome! Please follow these steps:
 
 ### Fork the repository.
 
@@ -67,15 +73,15 @@ The application should now be running on http://localhost:3000.
 - Make your changes and commit them (git commit -m 'Add some feature').
 - Push to the branch (git push origin feature/your-feature-name).
 - Open a Pull Request.
-- License
-- This project is licensed under the MIT License - see the LICENSE file for details.
+
+### License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Acknowledgements
 
-#### OpenWeatherMap for providing the weather data.
-
-#### Icons provided by Flaticon:
-
+OpenWeatherMap for providing the weather data.
+Icons provided by Flaticon:
 Contributors:
 
 - Paul J.
