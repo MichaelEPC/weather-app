@@ -1,30 +1,81 @@
-# React + TypeScript + Vite
+#Weather App
+A simple and elegant weather application that provides real-time weather updates and forecasts for various locations. Built with React, Redux Toolkit, and TypeScript, this app uses the OpenWeatherMap API to fetch weather data.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+`````markdown
+![weather app UI](./repo/appBackJPG.JPG)
 
-Currently, two official plugins are available:
+````markdown
+###Features
+Current Weather: Get the current weather conditions for any city.
+Weather Forecast: View the weather forecast for the next five days.
+Search History: Keep track of your recent searches.
+Responsive Design: Optimized for both desktop and mobile devices.
+Loading Indicators: Visual feedback while fetching data.
+Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+###Installation
+Prerequisites
+Node.js (version 14 or higher)
+Yarn or npm
 
-## Expanding the ESLint configuration
+###Steps
+Clone the repository:
+git clone https://github.com/yourusername/weather-app.git
+cd weather-app
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+###Install dependencies:
+Using Yarn:
+yarn install
 
-- Configure the top-level `parserOptions` property like this:
+Using npm:
+npm install
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+###Set up environment variables:
+Create a .env file in the root of your project and add your OpenWeatherMap API key:
+makefile
+VITE_API_URL=https://api.openweathermap.org/data/2.5/
+VITE_API_KEY=your_api_key_here
+
+Using Yarn:
+yarn dev
+
+Using npm:
+npm run dev
+
+The application should now be running on http://localhost:3000.
+
+###Usage
+Enter the name of a city in the search bar.
+View the current weather and the forecast for the next five days.
+Your recent searches will be stored and displayed for quick access.
+Built With
+React
+Redux Toolkit
+TypeScript
+Vite
+OpenWeatherMap API
+Contributing
+Contributions are welcome! Please follow these steps:
+
+###Fork the repository.
+Create a new branch (git checkout -b feature/your-feature-name).
+Make your changes and commit them (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/your-feature-name).
+Open a Pull Request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+###Acknowledgements
+####OpenWeatherMap for providing the weather data.
+####Icons provided by Flaticon:
+Contributors:
+
+- Paul J.
+- Freekpik
+- Iconixar
+
+```markdown
+Mady by Michael Posada - contact michaelposadadev@gmail.com
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+````
+`````
