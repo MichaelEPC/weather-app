@@ -1,0 +1,5 @@
+.cardsSection {
+  min-height: calc(100vh - 8.4rem);
+  width: 100%;
+  border-bottom-left-radius: 12rem;
+}

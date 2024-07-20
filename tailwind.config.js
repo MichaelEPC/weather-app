@@ -6,13 +6,10 @@ export default {
       mb: "500px",
       // => @media (min-width: 550px) { ... }
 
-      showNav: "552px",
-      // => @media (min-width: 550px) { ... }
-
-      sm: "682px",
+      sm: "652px",
       // => @media (min-width: 640px) { ... }
 
-      md: "768px",
+      md: "880px",
       // => @media (min-width: 768px) { ... }
 
       lg: "1024px",
@@ -21,18 +18,19 @@ export default {
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      pd: "1350px",
+      pd: "1500px",
       // => @media (min-width: 1280px) { ... }
 
-      "2xl": "1520px",
+      "2xl": "1700px",
       // => @media (min-width: 1520px) { ... }
     },
     extend: {
       colors: {
-        "principal-blue": "#007FFF",
+        "principal-color": "#447390",
+        "second-color": "#05a1ad",
         "text-color": "#707070",
         "ligh-gray": "#DDDDDD",
-        "labels-color": "#C7885A",
+        "green-light": "#a4cb6a",
       },
     },
   },
