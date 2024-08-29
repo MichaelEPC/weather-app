@@ -32,6 +32,8 @@ function index() {
     setWeatherPerHour(filteredData);
   }, [data]);
 
+  console.log(weatherPerHour.length);
+
   return (
     <article
       className={`${style.cardHourlyWeather} mt-4 flex h-auto w-full flex-col items-center p-2`}
@@ -48,9 +50,7 @@ function index() {
         </svg>
         <h3 className="ml-1 text-5xl font-bold text-white">Hourly ForeCast</h3>
       </div>
-      <div
-        className={`mt-3 grid grid-cols-${weatherPerHour.length} gap-10 lg:grid-cols-${weatherPerHour.length} xl:grid-cols-${weatherPerHour.length}`}
-      >
+      <div className={`mt-3 grid grid-cols-3 gap-10`}>
         {weatherPerHour?.map((weather) => (
           <WeatherItems
             key={weather.dt}

@@ -4,7 +4,7 @@ import Home from "../views/Home";
 
 export const AppUI = () => {
   const AppRoutes = () => {
-    const routes = useRoutes([{ path: "/", element: <Home /> }]);
+    const routes = useRoutes([{ path: "/weather-app", element: <Home /> }]);
     return routes;
   };
   return (
