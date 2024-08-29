@@ -32,8 +32,6 @@ function index() {
     setWeatherPerHour(filteredData);
   }, [data]);
 
-  console.log(weatherPerHour.length);
-
   return (
     <article
       className={`${style.cardHourlyWeather} mt-4 flex h-auto w-full flex-col items-center p-2`}
