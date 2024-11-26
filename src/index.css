@@ -14,7 +14,7 @@ html {
 
 @layer utilities {
   .bottomLine::after {
-    @apply bg-green-light absolute bottom-0 left-0 h-2 w-0 duration-200 content-[''];
+    @apply absolute bottom-0 left-0 h-2 w-0 bg-green-light duration-200 content-[''];
   }
   .bottomLine:hover:after {
     @apply w-full;

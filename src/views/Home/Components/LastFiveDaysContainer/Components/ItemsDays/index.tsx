@@ -48,7 +48,7 @@ function index({ name, date, description }: ControlProps) {
         <img className="h-16 w-16" src={selectTmage()} alt={selectTmage()} />
       </figure>
       <p className="cursor-none text-4xl font-bold text-white">{name}</p>
-      <p className="cursor-none text-4xl font-bold text-green-light">{`${date.substring(0, 10)}`}</p>
+      <p className="cursor-none text-4xl font-bold text-white">{`${date.substring(0, 10)}`}</p>
     </div>
   );
 }
