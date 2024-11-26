@@ -8,7 +8,8 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": false,
-    "alwaysStrict": false
+    "alwaysStrict": false,
+    "skipLibCheck": true
   },
   "files": [],
   "references": [
