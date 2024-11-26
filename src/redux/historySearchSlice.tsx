@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { fetchHistory } from "./fetchHistory";
 
-// @ts-expect-error
 export const searchHistory = createAsyncThunk(
   "history/fetchHistory",
   async () => {
