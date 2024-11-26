@@ -9,7 +9,7 @@ export const fetchData = async (lat: number, lon: number) => {
     firstSearch = await firstSearch.json();
 
     let secondSearch = await fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_API_KEY}&units=metric`,
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_API_KEY}&units=metric`,
     );
     if (!secondSearch.ok) {
       return null;
@@ -17,7 +17,7 @@ export const fetchData = async (lat: number, lon: number) => {
     secondSearch = await secondSearch.json();
 
     let thirdSearch = await fetch(
-      `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_API_KEY}&units=metric`,
+      `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_API_KEY}&units=metric`,
     );
     if (!thirdSearch.ok) {
       return null;
