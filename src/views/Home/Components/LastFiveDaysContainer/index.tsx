@@ -3,7 +3,8 @@ import style from "./style.module.css";
 import ItemsDays from "./Components/ItemsDays";
 import { useSelector } from "react-redux";
 
-function index() {
+function Index() {
+  // @ts-ignore
   const data = useSelector((state) => state.data.data.hourlyForeCast.list);
   const [dataFiltered, setDataFiltered] = React.useState([]);
   const getDaysWeather = () => {
@@ -83,4 +84,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

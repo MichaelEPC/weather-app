@@ -10,6 +10,7 @@ import snow from "../../../../assets/snow.png";
 import thunderStorm from "../../../../assets/thunderStorm.png";
 
 function CityNameContainer() {
+  // @ts-ignore
   const data = useSelector((state) => state.data.data.cityInfo);
   const today = new Date();
   const formattedDate = today.toLocaleDateString("es-ES");

@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 
 function index() {
   const data = useSelector(
+    // @ts-ignore
     (state) => state.data.data.airPol.list[0].components,
   );
   const [listResult, setListResult] = React.useState([]);

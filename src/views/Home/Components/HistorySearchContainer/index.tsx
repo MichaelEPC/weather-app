@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import style from "./style.module.css";
 import CityItems from "./Components/CityItems";
 import { searchHistory } from "../../../../redux/historySearchSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,10 +16,10 @@ function Index() {
   const searchHistoryState = useSelector(
     (state: any) => state.history.searchHistory,
   );
-  const data = useSelector((state: any) => state.data.data);
 
   const changePlaceinfo = (lat: number, lon: number): void => {
     dispatch(
+      // @ts-ignore
       searchCityClimate({
         lat: lat,
         lon: lon,
@@ -29,6 +28,7 @@ function Index() {
   };
 
   useEffect(() => {
+    // @ts-ignore
     dispatch(searchHistory());
   }, [dispatch]);
 

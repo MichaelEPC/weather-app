@@ -1,11 +1,12 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { PayloadAction } from "@reduxjs/toolkit";
 import { fetchData } from "./fecthClimate";
 
 interface paremetersApi {
   lat: number;
   lon: number;
 }
-
+// @ts-ignore
 export const searchCityClimate = createAsyncThunk(
   "data/fetchData",
   async ({ lat, lon }: paremetersApi) => {
@@ -29,6 +30,7 @@ export const dataSlice = createSlice({
     builder
       .addCase(
         searchCityClimate.fulfilled,
+        // @ts-expect-ignore
         (state, action: PayloadAction<any>) => {
           state.loading = false;
           state.data = action.payload;

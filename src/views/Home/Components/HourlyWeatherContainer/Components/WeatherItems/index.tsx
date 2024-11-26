@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./style.module.css";
 import cloudy from "../../../../../../assets/cloudy-freepik.png";
 import clear from "../../../../../../assets/sun-freepik.png";
 import rain from "../../../../../../assets/rain-iconixar.png";

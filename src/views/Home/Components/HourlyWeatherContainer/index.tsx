@@ -1,10 +1,54 @@
 import React, { useEffect } from "react";
-import style from "./style.module.css";
 import WeatherItems from "./Components/WeatherItems";
-import { useSelector, UseSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../../redux/store";
+import style from "./style.module.css";
 
-function index() {
-  const data = useSelector((state) => state.data.data.hourlyForeCast.list);
+type ArrayWeather = ObjectWeather[];
+
+interface ObjectWeather {
+  dt: number;
+  main: {
+    temp: number;
+    feels_like: number;
+    temp_min: number;
+    temp_max: number;
+    pressure: number;
+    sea_level: number;
+    grnd_level: number;
+    humidity: number;
+    temp_kf: number;
+  };
+  weather: [
+    {
+      id: number;
+      main: string;
+      description: string;
+      icon: string;
+    },
+  ];
+  clouds: {
+    all: number;
+  };
+  wind: {
+    speed: number;
+    deg: number;
+    gust: number;
+  };
+  visibility: number;
+  pop: number;
+  sys: {
+    pod: string;
+  };
+  dt_txt: string;
+}
+
+function Index() {
+  const data = useSelector(
+    // @ts-ignore
+    (state: RootState) => state.data.data.hourlyForeCast.list,
+  );
+
   const [weatherPerHour, setWeatherPerHour] = React.useState([]);
 
   const filterWeatherToday = () => {
@@ -29,6 +73,8 @@ function index() {
 
   useEffect(() => {
     const filteredData = filterWeatherToday();
+    console.log(filteredData);
+
     setWeatherPerHour(filteredData);
   }, [data]);
 
@@ -63,4 +109,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

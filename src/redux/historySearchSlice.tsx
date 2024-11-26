@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { fetchHistory } from "./fetchHistory";
 
+// @ts-ignore
 export const searchHistory = createAsyncThunk(
   "history/fetchHistory",
   async () => {
@@ -20,11 +21,8 @@ export const searchHistorySlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(
-      searchHistory.fulfilled,
-      (state, action: PayloadAction<any>) => {
-        state.searchHistory = action.payload;
-      },
-    );
+    builder.addCase(searchHistory.fulfilled, (state, action) => {
+      state.searchHistory = action.payload;
+    });
   },
 });

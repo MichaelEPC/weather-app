@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import clear from "../../../../../../assets/sun-freepik.png";
 import cloudy from "../../../../../../assets/cloudy-freepik.png";
 import rain from "../../../../../../assets/rain-iconixar.png";

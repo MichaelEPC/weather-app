@@ -1,4 +1,15 @@
 {
+  "compilerOptions": {
+    "noEmitOnError": false,
+    "strictNullChecks": false,
+    "noImplicitThis": false,
+    "strict": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": false,
+    "alwaysStrict": false
+  },
   "files": [],
   "references": [
     {

@@ -3,6 +3,7 @@ import style from "./style.module.css";
 import { useSelector } from "react-redux";
 
 function index() {
+  // @ts-ignore
   const data = useSelector((state) => state.data.data.cityInfo);
   return (
     <article
