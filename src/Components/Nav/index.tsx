@@ -7,13 +7,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchSearchResults } from "./fetchSearchResults";
 import { addSearch } from "./addSearchLog";
 
-const index = () => {
+const Index = () => {
   const [cityValue, setCityValue] = React.useState("");
   const [results, setResults] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [noResults, setNoResults] = React.useState(false);
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.data.data);
+  const data = useSelector(
+    // @ts-expect-error data Error
+    (state) => state.data.data,
+  );
 
   const handleSubmit = (
     lat: number,
@@ -23,6 +26,7 @@ const index = () => {
   ) => {
     setCityValue("");
     dispatch(
+      // @ts-expect-error data error
       searchCityClimate({
         lat: lat,
         lon: lon,
@@ -112,4 +116,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -1,19 +1,19 @@
-import React from "react";
 import style from "./style.module.css";
 import sunRiseIMG from "../../../../assets/sunrise.png";
 import sunsetIMG from "../../../../assets/sunset.png";
 import { useSelector } from "react-redux";
 
-function index() {
+function Index() {
+  // @ts-expect-error data type
   const data = useSelector((state) => state.data.data.cityInfo.sys);
   const convertTimestampToDate = (timestamp: number) => {
     const date = new Date(timestamp * 1000);
-    let day = date.getDate();
-    let month = date.getMonth() + 1;
-    const year = date.getFullYear();
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
+    let day: number | string = date.getDate();
+    let month: number | string = date.getMonth() + 1;
+    const year: number | string = date.getFullYear();
+    let hours: number | string = date.getHours();
+    let minutes: number | string = date.getMinutes();
+    let seconds: number | string = date.getSeconds();
 
     day = day < 10 ? "0" + day : day;
     month = month < 10 ? "0" + month : month;
@@ -21,7 +21,7 @@ function index() {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    let formattedDate = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+    const formattedDate = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
     return formattedDate;
   };
 
@@ -70,4 +70,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

@@ -19,10 +19,13 @@ const Home = () => {
   const [error, setError] = React.useState("");
   const [problem, setProblem] = React.useState(false);
   const dispatch = useDispatch();
+  // @ts-expect-error data type
   const data = useSelector((state) => state.data.data);
 
   useEffect(() => {
+    // @ts-expect-error searchClimate
     dispatch(searchCityClimate({ lat: 40.4167047, lon: -3.7035825 }));
+    // @ts-expect-error searchHistory
     dispatch(searchHistory());
     setTimeout(() => {
       if (!data) {

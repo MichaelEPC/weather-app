@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { dataSlice } from "./dataSlice";
 import { searchHistorySlice } from "./historySearchSlice";
 
+// @ts-error
 export const store = configureStore({
   reducer: {
     data: dataSlice.reducer,

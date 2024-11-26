@@ -6,7 +6,7 @@ interface paremetersApi {
   lat: number;
   lon: number;
 }
-// @ts-ignore
+
 export const searchCityClimate = createAsyncThunk(
   "data/fetchData",
   async ({ lat, lon }: paremetersApi) => {
@@ -20,7 +20,7 @@ interface InitialStateProps {
   loading: boolean;
 }
 
-const initialState: InitialStateProps = { data: {}, loading: false };
+const initialState: InitialStateProps = { data: [], loading: false };
 
 export const dataSlice = createSlice({
   name: "data",

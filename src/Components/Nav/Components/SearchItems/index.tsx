@@ -6,7 +6,12 @@ interface ControlProps {
   state?: string;
   lat: number;
   lon: number;
-  handleSubmit: (lat: number, lon: number) => void;
+  handleSubmit: (
+    lat: number,
+    lon: number,
+    name: string,
+    country: string,
+  ) => void;
 }
 
 function index({ name, country, state, lat, lon, handleSubmit }: ControlProps) {
