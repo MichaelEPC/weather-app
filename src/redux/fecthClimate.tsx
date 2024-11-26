@@ -1,7 +1,7 @@
 export const fetchData = async (lat: number, lon: number) => {
   try {
     let firstSearch = await fetch(
-      `${import.meta.env.VITE_API_URL}lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_API_KEY}&units=metric`,
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_API_KEY}&units=metric`,
     );
     if (!firstSearch.ok) {
       return null;
